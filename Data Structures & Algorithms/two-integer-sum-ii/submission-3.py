@@ -1,0 +1,11 @@
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        index=[]
+        for i in range (0,len(numbers)):
+            for j in range(i,len(numbers)):
+                if (numbers[i]+numbers[j])==target  and i!=j:
+                    index.extend([i+1,j+1])
+        return index
+
+        
+        
